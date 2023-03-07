@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ai-universe</title>
+    <!-- bootstarp cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- external css  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- fontawesome icon  -->
+    <script src="https://kit.fontawesome.com/0520fae339.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="container text-center my-3">
+      <h1>AI Universe Hub</h1>
+      <button id="sort-btn" class="btn btn-primary">Sort by Date</button>
+
+    </header>
+    <main class="container mb-4">
+      <!-- spinner section  -->
+        <section id="spinner" class="d-flex justify-content-center my-3 d-none">
+          <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </section>
+        <!-- display card section  -->
+        <section>
+            <div id="card-container" class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- show news card here from js  -->
+              </div>
+
+              <!-- see more btn -->
+              <div class="text-center my-3">
+              <button id="see-more-btn" class="btn btn-primary">See More</button>
+
+              </div>
+        </section>
+
+        <section>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="position-relative">
+          <button type="button" class="btn-close position-absolute top-0 start-100 translate-middle p-2 bg-danger rounded-circle" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div id="modal-body" class="modal-body p-4">
+            <!-- modal content will be creat here by js  -->
+        </div>
+      </div>
+    </div>
+  </div>
+        </section>
+    </main>
+    
+    <!-- bootstarp javaScript  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- exterenal javaScript  -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- <li>${features["1"].feature_name}</li>
+                        <li>${features["2"].feature_name}</li>
+                        <li>${features["3"].feature_name}</li> -->
